@@ -16,10 +16,11 @@ public class MyStackLinkedList<T> implements MyStack<T> {
 
         @Override
         public String toString() {
-            return "Node{" +
-                    "item=" + item +
-                    ", next=" + next +
-                    '}';
+            final StringBuilder sb = new StringBuilder("Node{");
+            sb.append("item=").append(item);
+            sb.append(", next=").append(next);
+            sb.append('}');
+            return sb.toString();
         }
     }
 
@@ -91,9 +92,10 @@ public class MyStackLinkedList<T> implements MyStack<T> {
 
     @Override
     public String toString() {
-        return "MyStackLinkedList{" +
-                "top=" + top +
-                ", size=" + size +
-                '}';
+        final StringBuilder sb = new StringBuilder("MyStackLinkedList{");
+        sb.append("top=").append(top);
+        sb.append(", size=").append(size);
+        sb.append('}');
+        return sb.toString();
     }
 }
