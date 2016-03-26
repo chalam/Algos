@@ -10,6 +10,13 @@ public interface MyQueue<T> {
     boolean isEmpty();
 
     /*
+        is the queue full
+     */
+    default boolean isFull() {
+        return false;
+    }
+
+    /*
     number of items
      */
     int size();
