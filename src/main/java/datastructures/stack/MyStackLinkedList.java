@@ -4,6 +4,7 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 /**
+ * Stack implementation with LinkedList
  * Created by Lamuel on 3/25/2016.
  */
 public class MyStackLinkedList<T> implements MyStack<T> {

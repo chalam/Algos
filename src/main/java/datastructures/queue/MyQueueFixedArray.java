@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 /**
+ * Queue implemented with Fixed Array capacity
  * Created by Lamuel on 3/26/2016.
  */
 public class MyQueueFixedArray<T> implements MyQueue<T> {

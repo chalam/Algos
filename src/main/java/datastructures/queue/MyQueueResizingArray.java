@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 /**
+ * Queue implemented with Resizing Array capacity
  * Created by Lamuel on 3/26/2016.
  */
 public class MyQueueResizingArray<T> implements MyQueue<T> {

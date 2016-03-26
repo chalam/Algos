@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.EmptyStackException;
 
 /**
+ * Stack implementation with Fixed array capacity
  * Created by Lamuel on 3/25/2016.
  */
 

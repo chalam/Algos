@@ -3,6 +3,7 @@ package datastructures.queue;
 import java.util.NoSuchElementException;
 
 /**
+ * Queue implemented with LinkedList
  * Created by Lamuel on 3/26/2016.
  */
 public class MyQueueLinkedList<T> implements MyQueue<T> {
