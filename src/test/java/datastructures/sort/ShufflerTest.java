@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class ShufflerTest {
     @Test
     public void doShuffle() {
-        String[] letters = "SHELLSORTEXAMPLE".split("");
+        String[] letters = "SHUFFLEANDTHENSHELLSORTEXAMPLE".split("");
 
         System.out.printf("\nBefore shuffle: %s", Arrays.toString(letters));
         Shuffler shuffler = new Shuffler();
@@ -21,6 +21,7 @@ public class ShufflerTest {
         ShellSort sorter = new ShellSort();
         System.out.printf("\nArray sorted: %s, %s", sorter.isSorted(letters), Arrays.toString(letters));
         sorter.sort(letters);
+        assertTrue("Array is not sorted", sorter.isSorted(letters));
         System.out.printf("\nArray sorted: %s, %s", sorter.isSorted(letters), Arrays.toString(letters));
 
     }

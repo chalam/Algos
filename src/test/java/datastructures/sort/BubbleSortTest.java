@@ -22,6 +22,7 @@ public class BubbleSortTest {
 
         System.out.printf("\nArray sorted: %s, %s", sorter.isSorted(data), Arrays.toString(data));
         sorter.sort(data);
+        assertTrue("Array is not sorted", sorter.isSorted(data));
         System.out.printf("\nArray sorted: %s, %s", sorter.isSorted(data), Arrays.toString(data));
     }
 }

@@ -1,16 +1,23 @@
 package datastructures.sort;
 
 /**
- * Shell proposed increasing the hop/stride length h of insertion sort
+ * Mr. Shell proposed increasing the hop/stride length h of insertion sort
  * a g-sorted array remains g-sorted after h-sorting
- * Shell is off-course faster than Insertion
+ * Shell is even faster than Insertion
+ * tiny code footprint for embedded devices or harwarde sort
  * Created by Lamuel on 3/26/2016.
  */
 public class ShellSort<T extends Comparable<T>> implements Sortable<T> {
 
     /**
      * sort method
-     *
+     *  unstable  = equal keys are reordered
+     *  space = O(1)
+     *  worst = O(N^2)
+     *  avg = gap seq
+     *  best = O(N lg N)
+     *  O(n^2) 1/4 N^2 compare and swap
+     *  adaptive = o(n) when nearly sorted
      * @param data input array
      */
     @Override
