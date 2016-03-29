@@ -16,10 +16,10 @@ public class QuickSelectTest {
         Integer[] data = {5,2, 12, 5,2 ,1,6,8,4,3,7,0, -3};
 
         Integer fourthMin = (Integer) qs.select(data, 4);
-        assertEquals("Quick select failed", fourthMin.intValue(), 2);
+        assertEquals("Quick select failed", 2, fourthMin.intValue());
 
         Integer thirthMax = (Integer) qs.select(data, data.length - 3);
-        assertEquals("Quick select failed", thirthMax.intValue(), 7);
+        assertEquals("Quick select failed", 7, thirthMax.intValue());
 
         QuickSort sorter = new QuickSort();
         sorter.quickSort(data, 0, data.length - 1);

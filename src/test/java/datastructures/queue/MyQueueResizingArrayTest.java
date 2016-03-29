@@ -35,27 +35,27 @@ public class MyQueueResizingArrayTest {
         que.enQueue("seven");
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "one");
+        assertEquals("Queue failed", "one", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "two");
+        assertEquals("Queue failed", "two", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "three");
+        assertEquals("Queue failed", "three", que.deQueue());
         System.out.println(que);
 
 
-        assertEquals("Queue failed", que.size(), 4);
+        assertEquals("Queue failed", 4, que.size());
 
-        assertEquals("Queue failed", que.deQueue(), "four");
+        assertEquals("Queue failed", "four", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.peek(), "five");
+        assertEquals("Queue failed", "five", que.peek());
 
-        assertEquals("Queue failed", que.deQueue(), "five");
+        assertEquals("Queue failed", "five", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.size(), 2);
+        assertEquals("Queue failed", 2, que.size());
     }
 
     @Test(expected=NoSuchElementException.class)

@@ -27,13 +27,13 @@ public class MyQueueFixedArrayTest {
         que.enQueue("four");
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "one");
+        assertEquals("Queue failed", "one", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "two");
+        assertEquals("Queue failed", "two", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "three");
+        assertEquals("Queue failed", "three", que.deQueue());
         System.out.println(que);
 
         que.enQueue("five");
@@ -47,13 +47,12 @@ public class MyQueueFixedArrayTest {
 
         assertEquals("Queue failed", que.size(), 4);
 
-        assertEquals("Queue failed", que.deQueue(), "four");
+        assertEquals("Queue failed", "four", que.deQueue());
         System.out.println(que);
 
-        assertEquals("Queue failed", que.peek(), "five");
+        assertEquals("Queue failed", "five", que.peek());
+        assertEquals("Queue failed", "five", que.deQueue());
 
-
-        assertEquals("Queue failed", que.deQueue(), "five");
         System.out.println(que);
 
 
@@ -63,14 +62,14 @@ public class MyQueueFixedArrayTest {
         que.enQueue("nine");
         System.out.println(que);
 
-        assertEquals("Queue failed", que.size(), 4);
+        assertEquals("Queue failed", 4, que.size());
     }
 
     @Test(expected=NoSuchElementException.class)
     public void testEmptyDeQueue() {
         MyQueue que = new MyQueueResizingArray<String>();
         assertTrue(que.isEmpty());
-        assertEquals("Queue failed", que.peek(), false);
+        assertEquals("Queue failed", false, que.peek());
         que.deQueue();
     }
 

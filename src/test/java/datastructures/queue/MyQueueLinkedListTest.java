@@ -20,20 +20,20 @@ public class MyQueueLinkedListTest {
         que.enQueue("five");
         System.out.println(que);
 
-        assertEquals("Queue failed", que.deQueue(), "one");
+        assertEquals("Queue failed", "one", que.deQueue());
+        assertEquals("Queue failed", "two", que.deQueue());
+        assertEquals("Queue failed", "three", que.deQueue());
 
-        assertEquals("Queue failed", que.deQueue(), "two");
-        assertEquals("Queue failed", que.deQueue(), "three");
         System.out.println(que);
 
+        assertEquals("Queue failed", 2, que.size());
 
-        assertEquals("Queue failed", que.size(), 2);
+        assertEquals("Queue failed", "four", que.deQueue());
 
-        assertEquals("Queue failed", que.deQueue(), "four");
-        assertEquals("Queue failed", que.peek(), "five");
+        assertEquals("Queue failed", "five", que.peek());
+        assertEquals("Queue failed", "five", que.deQueue());
 
-        assertEquals("Queue failed", que.deQueue(), "five");
-        assertEquals("Queue failed", que.size(), 0);
+        assertEquals("Queue failed", 0, que.size());
     }
 
     @Test(expected=NoSuchElementException.class)

@@ -20,21 +20,18 @@ public class MyStackFixedArrayTest {
         stack.push("to");
         stack.push("be");
 
-        assertEquals("Stack failed", stack.pop(), "be");
-        assertEquals("Stack failed", stack.pop(), "to");
-        assertEquals("Stack failed", stack.pop(), "not");
-        assertEquals("Stack failed", stack.size(), 3);
+        assertEquals("Stack failed", "be", stack.pop());
+        assertEquals("Stack failed", "to", stack.pop());
+        assertEquals("Stack failed", "not", stack.pop());
+        assertEquals("Stack failed", 3, stack.size());
 
+        assertEquals("Stack failed", "or", stack.pop());
+        assertEquals("Stack failed", "be", stack.pop());
 
-        assertEquals("Stack failed", stack.pop(), "or");
-        assertEquals("Stack failed", stack.pop(), "be");
-
-        assertEquals("Stack failed", stack.peek(), "to");
+        assertEquals("Stack failed", "to", stack.peek());
         System.out.println(stack);
-        assertEquals("Stack failed", stack.pop(), "to");
-        assertEquals("Stack failed", stack.size(), 0);
-
-
+        assertEquals("Stack failed", "to", stack.pop());
+        assertEquals("Stack failed", 0, stack.size());
     }
 
     @Test(expected=EmptyStackException.class)
@@ -47,7 +44,7 @@ public class MyStackFixedArrayTest {
     @Test(expected=EmptyStackException.class)
     public void testPeekEmptyStackException() {
         MyStack stack = new MyStackFixedArray<String>(1);
-        assertTrue(stack.isEmpty());
+        assertTrue("Stack should be empty", stack.isEmpty());
         stack.peek();
     }
 
@@ -58,6 +55,6 @@ public class MyStackFixedArrayTest {
         assertTrue(stack.isFull());
         stack.push(100);
         stack.pop();
-        assertTrue(stack.isEmpty());
+        assertTrue("Stack should be empty", stack.isEmpty());
     }
 }
