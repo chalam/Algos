@@ -11,6 +11,8 @@ public class SymbolTableLinkedListTest {
     @Test
     public void doGetPut() {
         SymbolTableLinkedList<String, Integer> st = new SymbolTableLinkedList<>();
+        assertTrue("Symbol table lookup failed", st.isEmpty());
+
         st.put("S", 0);
         st.put("E", 1);
         st.put("A", 2);
@@ -26,11 +28,36 @@ public class SymbolTableLinkedListTest {
 
         st.delete("A");
         assertEquals("Symbol table lookup failed", null, st.get("A"));
+
+        st.put("H", 10);
+        assertEquals("Symbol table lookup failed", new Integer(10), st.get("H"));
+
+        assertEquals("Symbol table lookup failed", 5, st.size());
+
+
+    }
+
+    @Test(expected=NullPointerException.class)
+    public void doNullGet() {
+        SymbolTableLinkedList<String, Integer> st = new SymbolTableLinkedList<>();
+        st.get(null);
     }
 
     @Test(expected=NullPointerException.class)
     public void doNullPut() {
         SymbolTableLinkedList<String, Integer> st = new SymbolTableLinkedList<>();
         st.put(null, 0);
+    }
+
+    @Test(expected=NullPointerException.class)
+    public void doNullContains() {
+        SymbolTableLinkedList<String, Integer> st = new SymbolTableLinkedList<>();
+        st.contains(null);
+    }
+
+    @Test(expected=NullPointerException.class)
+    public void doNullDelete() {
+        SymbolTableLinkedList<String, Integer> st = new SymbolTableLinkedList<>();
+        st.delete(null);
     }
 }

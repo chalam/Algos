@@ -81,7 +81,8 @@ public class SymbolTableLinkedList<Key, Value> {
 
     /**
      * Inserts the specified key-value pair into the symbol table,
-     * Overwrites the existing value
+     * if key exist, overwrites the existing value
+     * if key not found, add a new node and re-point first
      * @param key
      * @param val
      */
