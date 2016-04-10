@@ -2,6 +2,7 @@ package datastructures.heap;
 
 /**
  * Binary Heap impl with fixed arrays based on Sedgewick
+ * Ref java.util.PriorityQueue;
  * Created by Lamuel on 3/28/2016.
  */
 public class PriorityQueueMin<E extends Comparable<E>> {

@@ -6,6 +6,9 @@ import java.util.Comparator;
 
 /**
  * Binary Heap impl with fixed arrays based on Sedgewick
+ * Swim up to the root if less than parent
+ * Sink down to the leaves if greater than parent
+ * Ref java.util.PriorityQueue;
  * Created by Lamuel on 3/28/2016.
  */
 public class PriorityQueueMax<E extends Comparable<E>> {
