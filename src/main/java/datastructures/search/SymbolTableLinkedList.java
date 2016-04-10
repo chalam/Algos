@@ -4,6 +4,15 @@ import datastructures.queue.MyQueue;
 
 /**
  * Sequential Search in unordered linked list
+ * Search
+ *  Worst = N
+ *  Avg   = N/2
+ * Insert
+ *  Worst = N
+ *  Avg   = N
+ * Unordered
+ * Cost Ops = equals()
+ *
  * Created by Lamuel on 3/29/2016.
  */
 

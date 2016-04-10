@@ -8,6 +8,14 @@ import java.util.NoSuchElementException;
 
 /**
  * Symbol Table impl on ordered Array
+ * Search
+ *  Worst = log N
+ *  Avg   = log N
+ * Insert
+ *  Worst  = N (shift to right)
+ *  Avg  = N/2
+ * Ordered
+ * Cost Ops = compareTo()
  * Created by Lamuel on 3/30/2016.
  */
 
