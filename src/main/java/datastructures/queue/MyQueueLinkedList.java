@@ -1,5 +1,6 @@
 package datastructures.queue;
 
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
@@ -99,5 +100,33 @@ public class MyQueueLinkedList<T> implements MyQueue<T> {
         sb.append(", size=").append(size);
         sb.append('}');
         return sb.toString();
+    }
+
+    /**
+     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     *
+     * @return an iterator that iterates over the items in this queue in FIFO order
+     */
+    public Iterator<T> iterator()  {
+        return new ListIterator<T>(first);
+    }
+
+    // an iterator, doesn't implement remove() since it's optional
+    private class ListIterator<Item> implements Iterator<Item> {
+        private Node<Item> current;
+
+        public ListIterator(Node<Item> first) {
+            current = first;
+        }
+
+        public boolean hasNext()  { return current != null;                     }
+        public void remove()      { throw new UnsupportedOperationException();  }
+
+        public Item next() {
+            if (!hasNext()) throw new NoSuchElementException();
+            Item item = current.item;
+            current = current.next;
+            return item;
+        }
     }
 }

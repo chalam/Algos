@@ -1,6 +1,7 @@
 package datastructures.queue;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
@@ -93,5 +94,29 @@ public class MyQueueResizingArray<T> implements MyQueue<T> {
         sb.append(", size=").append(size);
         sb.append('}');
         return sb.toString();
+    }
+
+    /**
+     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     *
+     * @return an iterator that iterates over the items in this queue in FIFO order
+     */
+    public Iterator<T> iterator()  {
+        return new ArrayIterator<T>();
+    }
+
+    // an iterator, doesn't implement remove() since it's optional
+    private class ArrayIterator<T> implements Iterator<T> {
+        private int i = 0;
+
+        public ArrayIterator() {
+        }
+
+        public boolean hasNext()  { return queue.length > i;   }
+        public void remove()      { throw new UnsupportedOperationException();  }
+
+        public T next() {
+            return (T) queue[i++];
+        }
     }
 }

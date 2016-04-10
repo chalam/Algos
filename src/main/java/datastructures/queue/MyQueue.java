@@ -3,7 +3,7 @@ package datastructures.queue;
 /**
  * Created by Lamuel on 3/26/2016.
  */
-public interface MyQueue<T> {
+public interface MyQueue<T> extends Iterable<T> {
     /**
      * is the queue empty
      * @return true if queue is empty

@@ -1,10 +1,12 @@
 package datastructures.queue;
 
+import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -14,7 +16,7 @@ public class MyQueueFixedArrayTest {
 
     @Test
     public void useQueue() throws Exception {
-        MyQueue que = new MyQueueFixedArray<>(4);
+        MyQueue que = new MyQueueFixedArray<String>(4);
         que.enQueue("one");
         System.out.println(que);
 
@@ -63,6 +65,10 @@ public class MyQueueFixedArrayTest {
         System.out.println(que);
 
         assertEquals("Queue failed", 4, que.size());
+
+//        assertThat(que, Matchers.contains("A", "C", "E", "H", "M", "R", "S", "X"));
+//        assertThat(que.iterator(), Matchers.hasItem("M"));
+//        assertThat(que, Matchers.hasItemInArray({"A", "C", "E", "H", "M", "R", "S", "X"}));
     }
 
     @Test(expected=NoSuchElementException.class)
