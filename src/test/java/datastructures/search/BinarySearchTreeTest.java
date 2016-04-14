@@ -124,7 +124,8 @@ public class BinarySearchTreeTest {
 
         assertEquals("Symbol table lookup failed", 9, bst.size());
 
-
+        System.out.println("Aa".hashCode());
+        System.out.println("BB".hashCode());
 
     }
 }
