@@ -31,6 +31,16 @@ public class SymbolTableLinkedList<Key, Value> {
             this.val = val;
             this.next = next;
         }
+
+        @Override
+        public String toString() {
+            final StringBuilder sb = new StringBuilder("Node{");
+            sb.append("key=").append(key);
+            sb.append(", val=").append(val);
+            sb.append(", next=").append(next);
+            sb.append('}');
+            return sb.toString();
+        }
     }
 
     private int N;      //Size
@@ -142,4 +152,12 @@ public class SymbolTableLinkedList<Key, Value> {
         return node;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SymbolTableLinkedList{");
+        sb.append("N=").append(N);
+        sb.append(", first=").append(first);
+        sb.append('}');
+        return sb.toString();
+    }
 }
