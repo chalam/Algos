@@ -1,15 +1,16 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac DeluxeBouncingBall.java
- *  Execution:    java DeluxeBouncingBall
- *  Dependencies: StdDraw.java StdAudio.java
+ *  Compilation:  javac princeton_algos.DeluxeBouncingBall.java
+ *  Execution:    java princeton_algos.DeluxeBouncingBall
+ *  Dependencies: princeton_algos.StdDraw.java princeton_algos.StdAudio.java
  *                http://www.cs.princeton.edu/introcs/15inout/laser.wav
  *                http://www.cs.princeton.edu/introcs/15inout/pop.wav
  *                http://www.cs.princeton.edu/introcs/15inout/earth.gif
  *
  *  Implementation of a 2-d bouncing ball in the box from (-1, -1) to (1, 1).
  *
- *  % java DeluxeBouncingBall
+ *  % java princeton_algos.DeluxeBouncingBall
  *
  ******************************************************************************/
 

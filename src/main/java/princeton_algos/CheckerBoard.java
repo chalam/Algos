@@ -1,8 +1,9 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac CheckerBoard.java 
- *  Execution:    java CheckerBoard N
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.CheckerBoard.java
+ *  Execution:    java princeton_algos.CheckerBoard N
+ *  Dependencies: princeton_algos.StdDraw.java
  *
  *  Plots an N-by-N checker board.
  *

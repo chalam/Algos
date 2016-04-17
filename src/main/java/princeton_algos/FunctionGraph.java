@@ -1,8 +1,9 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac FunctionGraph.java 
- *  Execution:    java FunctionGraph
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.FunctionGraph.java
+ *  Execution:    java princeton_algos.FunctionGraph
+ *  Dependencies: princeton_algos.StdDraw.java
  *
  *  Plots the function y = sin(4x) + sin(20x) between x = 0 and x = pi
  *  by drawing N line segments.

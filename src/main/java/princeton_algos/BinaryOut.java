@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac BinaryOut.java
- *  Execution:    java BinaryOut
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.BinaryOut.java
+ *  Execution:    java princeton_algos.BinaryOut
  *  Dependencies: none
  *
  *  Write binary data to an output stream, either one 1-bit boolean,
@@ -28,8 +28,8 @@ import java.net.Socket;
  *  <p>
  *  The client must <tt>flush()</tt> the output stream when finished writing bits.
  *  <p>
- *  The client should not intermixing calls to <tt>BinaryOut</tt> with calls
- *  to <tt>Out</tt>; otherwise unexpected behavior will result.
+ *  The client should not intermixing calls to <tt>princeton_algos.BinaryOut</tt> with calls
+ *  to <tt>princeton_algos.Out</tt>; otherwise unexpected behavior will result.
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
@@ -324,7 +324,7 @@ public final class BinaryOut {
         // create binary output stream to write to file
         String filename = args[0];
         BinaryOut out = new BinaryOut(filename);
-        BinaryIn  in  = new BinaryIn();
+        BinaryIn in  = new BinaryIn();
 
         // read from standard input and write to file
         while (!in.isEmpty()) {

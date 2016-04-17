@@ -1,8 +1,9 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac Rose.java
- *  Execution:    java Rose N
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.Rose.java
+ *  Execution:    java princeton_algos.Rose N
+ *  Dependencies: princeton_algos.StdDraw.java
  *
  *  Plots an N petal rose (if N is odd) and a 2N-petal rose if N is
  *  even, using standard graphics.

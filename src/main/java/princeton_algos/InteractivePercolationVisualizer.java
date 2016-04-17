@@ -1,8 +1,10 @@
+package princeton_algos;
+
 /****************************************************************************
- *  Compilation:  javac InteractivePercolationVisualizer.java
- *  Execution:    java InteractivePercolationVisualizer N
- *  Dependencies: PercolationVisualizer.java Percolation.java
- *                StdDraw.java StdOut.java
+ *  Compilation:  javac princeton_algos.InteractivePercolationVisualizer.java
+ *  Execution:    java princeton_algos.InteractivePercolationVisualizer N
+ *  Dependencies: princeton_algos.PercolationVisualizer.java princeton_algos.Percolation.java
+ *                princeton_algos.StdDraw.java princeton_algos.StdOut.java
  *
  *  This program takes the grid size N as a command-line argument.
  *  Then, the user repeatedly clicks sites to open with the mouse.

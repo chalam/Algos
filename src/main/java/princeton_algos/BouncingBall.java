@@ -1,12 +1,13 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac BouncingBall.java
- *  Execution:    java BouncingBall
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.BouncingBall.java
+ *  Execution:    java princeton_algos.BouncingBall
+ *  Dependencies: princeton_algos.StdDraw.java
  *
  *  Implementation of a 2-d bouncing ball in the box from (-1, -1) to (1, 1).
  *
- *  % java BouncingBall
+ *  % java princeton_algos.BouncingBall
  *
  ******************************************************************************/
 

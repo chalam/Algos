@@ -1,14 +1,14 @@
-/******************************************************************************
- *  Compilation:  javac StdRandom.java
- *  Execution:    java StdRandom
- *  Dependencies: StdOut.java
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdRandom.java
+ *  Execution:    java princeton_algos.StdRandom
+ *  Dependencies: princeton_algos.StdOut.java
  *
  *  A library of static methods to generate pseudo-random numbers from
  *  different distributions (bernoulli, uniform, gaussian, discrete,
  *  and exponential). Also includes a method for shuffling an array.
  *
  *
- *  %  java StdRandom 5
+ *  %  java princeton_algos.StdRandom 5
  *  seed = 1316600602069
  *  59 16.81826  true 8.83954  0 
  *  32 91.32098  true 9.11026  0 
@@ -16,7 +16,7 @@
  *  92 32.88401  true 8.87089  0 
  *  72 92.55791  true 9.46241  0 
  *
- *  % java StdRandom 5
+ *  % java princeton_algos.StdRandom 5
  *  seed = 1316600616575
  *  96 60.17070  true 8.72821  0 
  *  79 32.01607  true 8.58159  0 
@@ -24,7 +24,7 @@
  *  96 51.65818  true 9.02102  0 
  *  99 17.55771  true 8.99762  0 
  *
- *  % java StdRandom 5 1316600616575
+ *  % java princeton_algos.StdRandom 5 1316600616575
  *  seed = 1316600616575
  *  96 60.17070  true 8.72821  0 
  *  79 32.01607  true 8.58159  0 
@@ -48,7 +48,7 @@
 import java.util.Random;
 
 /**
- *  The {@code StdRandom} class provides static methods for generating
+ *  The {@code princeton_algos.StdRandom} class provides static methods for generating
  *  random number from various discrete and continuous distributions, 
  *  including Bernoulli, uniform, Gaussian, exponential, pareto,
  *  Poisson, and Cauchy. It also provides method for shuffling an

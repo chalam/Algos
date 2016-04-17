@@ -52,7 +52,7 @@
        <BugPattern name="FE_FLOATING_POINT_EQUALITY" />
      </Match>
 
-     <!-- generating random integers before StdRandom.uniform() is introduced -->
+     <!-- generating random integers before princeton_algos.StdRandom.uniform() is introduced -->
      <Match classregex="Coupon|CouponCollector|TwentyQuestions|Craps|Functions|Mozart|Birthday|Birthdays|RollDie|SumOfTwoDice|RandomStudent|Sicherman|Chaos|DiscreteDistribution|MonteHall" >
        <BugPattern name="DM_NEXTINT_VIA_NEXTDOUBLE" />
      </Match>
@@ -75,8 +75,8 @@
      <!-- techincally, need (edu.princeton.cs.algs4.)? instead of .* for package version -->
      <!-- technically, need \. instead of . -->
 
-     <!-- Exclude StdDraw write to static variable. -->
-     <Match classregex=".*StdDraw" >
+     <!-- Exclude princeton_algos.StdDraw write to static variable. -->
+     <Match classregex=".*princeton_algos.StdDraw" >
        <BugPattern name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
      </Match>
 

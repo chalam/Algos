@@ -1,11 +1,11 @@
-/******************************************************************************
- *  Compilation:  javac BinaryIn.java
- *  Execution:    java BinaryIn input output
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.BinaryIn.java
+ *  Execution:    java princeton_algos.BinaryIn input output
  *  Dependencies: none             
  *  
  *  This library is for reading binary data from an input stream.
  *
- *  % java BinaryIn http://introcs.cs.princeton.edu/cover.jpg output.jpg
+ *  % java princeton_algos.BinaryIn http://introcs.cs.princeton.edu/cover.jpg output.jpg
  *
  ******************************************************************************/
 
@@ -35,8 +35,8 @@ import java.net.URLConnection;
  *  standard Java representations, in big-endian (most significant
  *  byte first) order.
  *  <p>
- *  The client should not intermix calls to <tt>BinaryIn</tt> with calls
- *  to <tt>In</tt>; otherwise unexpected behavior will result.
+ *  The client should not intermix calls to <tt>princeton_algos.BinaryIn</tt> with calls
+ *  to <tt>princeton_algos.In</tt>; otherwise unexpected behavior will result.
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
@@ -356,7 +356,7 @@ public final class BinaryIn {
     }
     
    /**
-     * Unit tests the <tt>BinaryIn</tt> data type.
+     * Unit tests the <tt>princeton_algos.BinaryIn</tt> data type.
      * Reads the name of a file or URL (first command-line argument)
      * and writes it to a file (second command-line argument).
      */

@@ -1,4 +1,6 @@
-public class AddInts { 
+package princeton_algos;
+
+public class AddInts {
    public static void main(String[] args) { 
       int N = Integer.parseInt(args[0]); 
       int sum = 0; 

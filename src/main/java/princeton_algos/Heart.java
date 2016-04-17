@@ -1,10 +1,11 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac Heart.java
- *  Execution:    java Heart
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.Heart.java
+ *  Execution:    java princeton_algos.Heart
+ *  Dependencies: princeton_algos.StdDraw.java
  *
- *  Draw a pink heart (a filled diamond plus two filled circles).
+ *  princeton_algos.Draw a pink heart (a filled diamond plus two filled circles).
  *
  ******************************************************************************/
 

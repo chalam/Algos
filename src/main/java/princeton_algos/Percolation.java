@@ -1,3 +1,5 @@
+package princeton_algos;
+
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 /**
@@ -93,7 +95,7 @@ public class Percolation {
 
     // test client (optional)
     public static void main(String[] args) {
-//        Percolation per =  new Percolation(10);
+//        princeton_algos.Percolation per =  new princeton_algos.Percolation(10);
 //        System.out.printf("\nDoes the system percolate : %s", per.percolates());
 
         int[][] percolatingGrid = {

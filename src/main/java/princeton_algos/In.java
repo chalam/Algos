@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac In.java
- *  Execution:    java In   (basic test --- see source for required files)
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.In.java
+ *  Execution:    java princeton_algos.In   (basic test --- see source for required files)
  *  Dependencies: none
  *
  *  Reads in data of various types from standard input, files, and URLs.
@@ -52,7 +52,7 @@ import java.util.regex.Pattern;
  */
 public final class In {
     
-    ///// begin: section (1 of 2) of code duplicated from In to StdIn.
+    ///// begin: section (1 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn.
     
     // assume Unicode UTF-8 encoding
     private static final String CHARSET_NAME = "UTF-8";
@@ -74,7 +74,7 @@ public final class In {
     private static final Pattern EVERYTHING_PATTERN
         = Pattern.compile("\\A");
 
-    //// end: section (1 of 2) of code duplicated from In to StdIn.
+    //// end: section (1 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn.
 
     private Scanner scanner;
 
@@ -210,7 +210,7 @@ public final class In {
         return scanner != null;
     }
     
-    ////  begin: section (2 of 2) of code duplicated from In to StdIn,
+    ////  begin: section (2 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn,
     ////  with all methods changed from "public" to "public static".
 
    /**
@@ -278,7 +278,7 @@ public final class In {
     public char readChar() {
         scanner.useDelimiter(EMPTY_PATTERN);
         String ch = scanner.next();
-        assert ch.length() == 1 : "Internal (Std)In.readChar() error!"
+        assert ch.length() == 1 : "Internal (Std)princeton_algos.In.readChar() error!"
             + " Please contact the authors.";
         scanner.useDelimiter(WHITESPACE_PATTERN);
         return ch.charAt(0);
@@ -449,7 +449,7 @@ public final class In {
         return vals;
     }
     
-    ///// end: section (2 of 2) of code duplicated from In to StdIn */
+    ///// end: section (2 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn */
 
    /**
      * Closes this input stream.
@@ -464,7 +464,7 @@ public final class In {
      *
      * @param      filename the name of the file
      * @return     the integers in the file
-     * @deprecated Replaced by <tt>new In(filename)</tt>.{@link #readAllInts()}.
+     * @deprecated Replaced by <tt>new princeton_algos.In(filename)</tt>.{@link #readAllInts()}.
      */
     public static int[] readInts(String filename) {
         return new In(filename).readAllInts();
@@ -476,7 +476,7 @@ public final class In {
      *
      * @param      filename the name of the file
      * @return     the doubles in the file
-     * @deprecated Replaced by <tt>new In(filename)</tt>.{@link #readAllDoubles()}.
+     * @deprecated Replaced by <tt>new princeton_algos.In(filename)</tt>.{@link #readAllDoubles()}.
      */
     public static double[] readDoubles(String filename) {
         return new In(filename).readAllDoubles();
@@ -488,7 +488,7 @@ public final class In {
      *
      * @param      filename the name of the file
      * @return     the strings in the file
-     * @deprecated Replaced by <tt>new In(filename)</tt>.{@link #readAllStrings()}.
+     * @deprecated Replaced by <tt>new princeton_algos.In(filename)</tt>.{@link #readAllStrings()}.
      */
     public static String[] readStrings(String filename) {
         return new In(filename).readAllStrings();
@@ -528,7 +528,7 @@ public final class In {
     }
     
    /**
-     * Unit tests the <tt>In</tt> data type.
+     * Unit tests the <tt>princeton_algos.In</tt> data type.
      */
     public static void main(String[] args) {
         In in;

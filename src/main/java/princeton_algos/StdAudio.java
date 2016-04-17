@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac StdAudio.java
- *  Execution:    java StdAudio
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdAudio.java
+ *  Execution:    java princeton_algos.StdAudio
  *  Dependencies: none
  *  
  *  Simple library for reading, writing, and manipulating .wav files.
@@ -195,7 +195,7 @@ public final class StdAudio {
         catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        // URL url = StdAudio.class.getResource(filename);
+        // URL url = princeton_algos.StdAudio.class.getResource(filename);
         if (url == null) throw new RuntimeException("audio " + filename + " not found");
         AudioClip clip = Applet.newAudioClip(url);
         clip.loop();
@@ -281,7 +281,7 @@ public final class StdAudio {
 
 
    /***************************************************************************
-    * Unit tests <tt>StdAudio</tt>.
+    * Unit tests <tt>princeton_algos.StdAudio</tt>.
     ***************************************************************************/
 
     // create a note (sine wave) of the given frequency (Hz), for the given

@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac StdIn.java
- *  Execution:    java StdIn   (interactive test of basic functionality)
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdIn.java
+ *  Execution:    java princeton_algos.StdIn   (interactive test of basic functionality)
  *  Dependencies: none
  *
  *  Reads in data of various types from standard input.
@@ -15,7 +15,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /**
- *  The <tt>StdIn</tt> class provides static methods for reading strings
+ *  The <tt>princeton_algos.StdIn</tt> class provides static methods for reading strings
  *  and numbers from standard input.
  *  These functions fall into one of four categories:
  *  <p>
@@ -76,9 +76,9 @@ import java.util.regex.Pattern;
  *  As an example, the following code fragment reads characters from standard input,
  *  one character at a time, and prints it to standard output.
  *  <pre>
- *  while (!StdIn.hasNextChar()) {
- *      char c = StdIn.readChar();
- *      StdOut.print(c);
+ *  while (!princeton_algos.StdIn.hasNextChar()) {
+ *      char c = princeton_algos.StdIn.readChar();
+ *      princeton_algos.StdOut.print(c);
  *  }
  *  </pre>
  *  <p>
@@ -102,9 +102,9 @@ import java.util.regex.Pattern;
  *  As an example, the following code fragment reads text from standard input,
  *  one line at a time, and prints it to standard output.
  *  <pre>
- *  while (!StdIn.hasNextLine()) {
- *      String line = StdIn.readLine();
- *      StdOut.println(line);
+ *  while (!princeton_algos.StdIn.hasNextLine()) {
+ *      String line = princeton_algos.StdIn.readLine();
+ *      princeton_algos.StdOut.println(line);
  *  }
  *  </pre>
  *  <p>
@@ -131,38 +131,38 @@ import java.util.regex.Pattern;
  *  As an example, the following code fragment reads all of the remaining
  *  tokens from standard input and returns them as an array of strings.
  *  <pre>
- *  String[] words = StdIn.readAllStrings();
+ *  String[] words = princeton_algos.StdIn.readAllStrings();
  *  </pre>
  *  <p>
  *  <b>Differences with Scanner.</b>
- *  {@code StdIn} and {@link Scanner} are both designed to parse 
+ *  {@code princeton_algos.StdIn} and {@link Scanner} are both designed to parse
  *  tokens and convert them to primitive types and strings.
  *  Some of the main differences are summarized below:
  *  <ul>
- *  <li> {@code StdIn} is a set of static methods and reads 
+ *  <li> {@code princeton_algos.StdIn} is a set of static methods and reads
  *       reads input from only standard input. It is suitable for use before
  *       a programmer knows about objects.
  *       See {@link In} for an object-oriented version that handles
  *       input from files, URLs,
  *       and sockets.
- *  <li> {@code StdIn} uses whitespace as the delimiter between tokens.
- *  <li> {@code StdIn} coerces the character-set encoding to UTF-8,
+ *  <li> {@code princeton_algos.StdIn} uses whitespace as the delimiter between tokens.
+ *  <li> {@code princeton_algos.StdIn} coerces the character-set encoding to UTF-8,
  *       which is a standard character encoding for Unicode.
- *  <li> {@code StdIn} coerces the locale to {@link Locale#US},
+ *  <li> {@code princeton_algos.StdIn} coerces the locale to {@link Locale#US},
  *       for consistency with {@link StdOut}, {@link Double#parseDouble(String)},
  *       and floating-point literals.
- *  <li> {@code StdIn} has convenient methods for reading a single
+ *  <li> {@code princeton_algos.StdIn} has convenient methods for reading a single
  *       character; reading in sequences of integers, doubles, or strings;
  *       and reading in all of the remaining input.
  *  </ul>
  *  <p>
- *  Historical note: {@code StdIn} preceded {@code Scanner}; when
+ *  Historical note: {@code princeton_algos.StdIn} preceded {@code Scanner}; when
  *  {@code Scanner} was introduced, this class was reimplemented to use {@code Scanner}.
  *  <p>
  *  <b>Using standard input.</b>
  *  Standard input is fundamental operating system abstraction, on Mac OS X,
  *  Windows, and Linux.
- *  The methods in {@code StdIn} are <em>blocking</em>, which means that they
+ *  The methods in {@code princeton_algos.StdIn} are <em>blocking</em>, which means that they
  *  will wait until you enter input on standard input.
  *  If your program has a loop that repeats until standard input is empty,
  *  you must signal that the input is finished.
@@ -174,7 +174,7 @@ import java.util.regex.Pattern;
  *  <b>Known bugs.</b>
  *  Java's UTF-8 encoding does not recognize the optional 
  *  <a href = "http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4508058">byte-order mask</a>.
- *  If the input begins with the optional byte-order mask, <tt>StdIn</tt>
+ *  If the input begins with the optional byte-order mask, <tt>princeton_algos.StdIn</tt>
  *  will have an extra character <code>&#92;uFEFF</code> at the beginning.
  *  <p>
  *  <b>Reference.</b> 
@@ -189,7 +189,7 @@ import java.util.regex.Pattern;
  */
 public final class StdIn {
 
-    /*** begin: section (1 of 2) of code duplicated from In to StdIn. */
+    /*** begin: section (1 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn. */
     
     // assume Unicode UTF-8 encoding
     private static final String CHARSET_NAME = "UTF-8";
@@ -207,14 +207,14 @@ public final class StdIn {
     // used to read the entire input
     private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
 
-    /*** end: section (1 of 2) of code duplicated from In to StdIn. */
+    /*** end: section (1 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn. */
 
     private static Scanner scanner;
  
     // it doesn't make sense to instantiate this class
     private StdIn() { }
 
-    //// begin: section (2 of 2) of code duplicated from In to StdIn,
+    //// begin: section (2 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn,
     //// with all methods changed from "public" to "public static"
 
    /**
@@ -280,7 +280,7 @@ public final class StdIn {
     public static char readChar() {
         scanner.useDelimiter(EMPTY_PATTERN);
         String ch = scanner.next();
-        assert ch.length() == 1 : "Internal (Std)In.readChar() error!"
+        assert ch.length() == 1 : "Internal (Std)princeton_algos.In.readChar() error!"
             + " Please contact the authors.";
         scanner.useDelimiter(WHITESPACE_PATTERN);
         return ch.charAt(0);
@@ -439,16 +439,16 @@ public final class StdIn {
         return vals;
     }
     
-    //// end: section (2 of 2) of code duplicated from In to StdIn
+    //// end: section (2 of 2) of code duplicated from princeton_algos.In to princeton_algos.StdIn
     
     
-    // do this once when StdIn is initialized
+    // do this once when princeton_algos.StdIn is initialized
     static {
         resync();
     }
 
     /**
-     * If StdIn changes, use this to reinitialize the scanner.
+     * If princeton_algos.StdIn changes, use this to reinitialize the scanner.
      */
     private static void resync() {
         setScanner(new Scanner(new java.io.BufferedInputStream(System.in), CHARSET_NAME));

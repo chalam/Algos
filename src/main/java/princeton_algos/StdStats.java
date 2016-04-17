@@ -1,7 +1,7 @@
-/******************************************************************************
- *  Compilation:  javac StdStats.java
- *  Execution:    java StdStats < input.txt
- *  Dependencies: StdOut.java
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdStats.java
+ *  Execution:    java princeton_algos.StdStats < input.txt
+ *  Dependencies: princeton_algos.StdOut.java
  *
  *  Library of statistical functions.
  *
@@ -21,7 +21,7 @@
  *  5
  *  3.0 1.0 2.0 5.0 4.0
  *
- *  % java StdStats < tiny.txt
+ *  % java princeton_algos.StdStats < tiny.txt
  *         min   1.000
  *        mean   3.000
  *         max   5.000
@@ -32,7 +32,7 @@
  ******************************************************************************/
 
 /**
- *  The {@code StdStats} class provides static methods for computing
+ *  The {@code princeton_algos.StdStats} class provides static methods for computing
  *  statistics such as min, max, mean, sample standard deviation, and
  *  sample variance.
  *  <p>
@@ -450,7 +450,7 @@ public final class StdStats {
 
 
    /**
-     * Unit tests <tt>StdStats</tt>.
+     * Unit tests <tt>princeton_algos.StdStats</tt>.
      * Convert command-line arguments to array of doubles and call various methods.
      */
     public static void main(String[] args) {

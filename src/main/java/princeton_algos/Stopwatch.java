@@ -1,18 +1,18 @@
-/******************************************************************************
- *  Compilation:  javac Stopwatch.java
- *  Execution:    java Stopwatch n
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.Stopwatch.java
+ *  Execution:    java princeton_algos.Stopwatch n
  *  Dependencies: none
  *
  *  A utility class to measure the running time (wall clock) of a program.
  *
- *  % java8 Stopwatch 100000000
+ *  % java8 princeton_algos.Stopwatch 100000000
  *  6.666667e+11  0.5820 seconds
  *  6.666667e+11  8.4530 seconds
  *
  ******************************************************************************/
 
 /**
- *  The <tt>Stopwatch</tt> data type is for measuring
+ *  The <tt>princeton_algos.Stopwatch</tt> data type is for measuring
  *  the time that elapses between the start and end of a
  *  programming task (wall-clock time).
  *
@@ -47,7 +47,7 @@ public class Stopwatch {
 
     
     /**
-     * Unit tests the <tt>Stopwatch</tt> data type.
+     * Unit tests the <tt>princeton_algos.Stopwatch</tt> data type.
      * Takes a command-line argument <tt>n</tt> and computes the 
      * sum of the square roots of the first <tt>n</tt> positive integers,
      * first using <tt>Math.sqrt()</tt>, then using <tt>Math.pow()</tt>.

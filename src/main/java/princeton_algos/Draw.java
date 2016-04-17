@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac Draw.java
- *  Execution:    java Draw
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.Draw.java
+ *  Execution:    java princeton_algos.Draw
  *  Dependencies: none
  *
  *  Drawing library. This class provides a basic capability for creating
@@ -22,6 +22,8 @@
  *       it can cause flicker
  *
  ******************************************************************************/
+
+import edu.princeton.cs.algs4.DrawListener;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -72,7 +74,7 @@ import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
 /**
- *  <i>Draw</i>. This class provides a basic capability for
+ *  <i>princeton_algos.Draw</i>. This class provides a basic capability for
  *  creating drawings with your programs. It uses a simple graphics model that
  *  allows you to create drawings consisting of points, lines, and curves
  *  in a window on your computer and to save the drawings to a file.
@@ -206,7 +208,7 @@ public final class Draw implements ActionListener, MouseListener, MouseMotionLis
     private double xmin, ymin, xmax, ymax;
 
     // name of window
-    private String name = "Draw";
+    private String name = "princeton_algos.Draw";
 
     // for synchronization
     private Object mouseLock = new Object();

@@ -1,7 +1,7 @@
-/******************************************************************************
- *  Compilation:  javac StdArrayIO.java
- *  Execution:    java StdArrayIO < input.txt
- *  Dependencies: StdOut.java
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdArrayIO.java
+ *  Execution:    java princeton_algos.StdArrayIO < input.txt
+ *  Dependencies: princeton_algos.StdOut.java
  *
  *  A library for reading in 1D and 2D arrays of integers, doubles,
  *  and booleans from standard input and printing them out to
@@ -25,7 +25,7 @@
  *    0 1 1
  *    1 1 1
  *
- *  % cat tinyDouble1D.txt tinyDouble2D.txt tinyBoolean2D.txt | java StdArrayIO
+ *  % cat tinyDouble1D.txt tinyDouble2D.txt tinyBoolean2D.txt | java princeton_algos.StdArrayIO
  *  4
  *    0.00000   0.24600   0.22200  -0.03200 
  *  
@@ -256,7 +256,7 @@ public class StdArrayIO {
 
 
    /**
-     * Unit tests <tt>StdAudio</tt>.
+     * Unit tests <tt>princeton_algos.StdAudio</tt>.
      */
     public static void main(String[] args) {
 

@@ -1,10 +1,12 @@
+package princeton_algos;
+
 /******************************************************************************
- *  Compilation:  javac RandomSeq.java
- *  Execution:    java RandomSeq N
+ *  Compilation:  javac princeton_algos.RandomSeq.java
+ *  Execution:    java princeton_algos.RandomSeq N
  *
  *  Prints N numbers between 0 and 1.
  *
- *  % java RandomSeq 5
+ *  % java princeton_algos.RandomSeq 5
  *  0.1654760343787165
  *  0.6212262060326124
  *  0.631755596883274

@@ -1,10 +1,12 @@
+package princeton_algos;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 /******************************************************************************
- *  Compilation:  javac Percolation.java
- *  Execution:    java Percolation < input.txt
- *  Dependencies: StdArrayIO.java StdDraw.java StdOut.java
+ *  Compilation:  javac princeton_algos.Percolation.java
+ *  Execution:    java princeton_algos.Percolation < input.txt
+ *  Dependencies: princeton_algos.StdArrayIO.java princeton_algos.StdDraw.java princeton_algos.StdOut.java
  *  Data files:   http://www.cs.princeton.edu/introcs/24percolation/testEZ.txt
  *                http://www.cs.princeton.edu/introcs/24percolation/testD.txt
  *
@@ -16,7 +18,7 @@ import java.io.FileNotFoundException;
  *  1 0 0 0 1
  *  0 1 1 1 1
  *
- *  % java Percolation < testEZ.txt
+ *  % java princeton_algos.Percolation < testEZ.txt
  *  5 5
  *  0 1 1 0 1 
  *  0 0 1 1 1 
@@ -36,7 +38,7 @@ import java.io.FileNotFoundException;
  *  0 1 1 0 0 1 1 1
  *  0 0 1 0 0 0 0 0
  *
- *  % java Percolation < testD.txt
+ *  % java princeton_algos.Percolation < testD.txt
  *  8 8
  *  0 0 0 1 1 1 0 1
  *  1 1 1 0 0 1 1 1

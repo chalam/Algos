@@ -1,7 +1,7 @@
-/****************************************************************************
- *  Compilation:  javac PercolationVisualizer.java
- *  Execution:    java PercolationVisualizer input.txt
- *  Dependencies: Percolation.java StdDraw.java In.java
+package princeton_algos; /****************************************************************************
+ *  Compilation:  javac princeton_algos.PercolationVisualizer.java
+ *  Execution:    java princeton_algos.PercolationVisualizer input.txt
+ *  Dependencies: princeton_algos.Percolation.java princeton_algos.StdDraw.java princeton_algos.In.java
  *
  *  This program takes the name of a file as a command-line argument.
  *  From that file, it

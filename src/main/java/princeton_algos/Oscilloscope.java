@@ -1,8 +1,9 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac Oscilloscope.java
- *  Execution:    java Oscilloscope A B wX wY phiX phiY
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.Oscilloscope.java
+ *  Execution:    java princeton_algos.Oscilloscope A B wX wY phiX phiY
+ *  Dependencies: princeton_algos.StdDraw.java
  *
  *  Simluate the output of an oscilloscope. Assume that the vertical and
  *  horizontal inputs are sinusoidal. Produce Lissajous patterns. These patterns are
@@ -19,8 +20,8 @@
  *        x = A sin (wX + phiX)
  *        y = B sin (wY + phiY)
  *  
- *  % java Oscilloscope 1 1 2 3 20 45
- *  % java Oscilloscope 1 1 5 3 30 45
+ *  % java princeton_algos.Oscilloscope 1 1 2 3 20 45
+ *  % java princeton_algos.Oscilloscope 1 1 5 3 30 45
  *
  ******************************************************************************/
 

@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac StdOut.java
- *  Execution:    java StdOut
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdOut.java
+ *  Execution:    java princeton_algos.StdOut
  *  Dependencies: none
  *
  *  Writes data of various types to standard output.
@@ -16,35 +16,35 @@ import java.util.Locale;
  *  This class provides methods for printing strings and numbers to standard output.
  *  <p>
  *  <b>Getting started.</b>
- *  To use this class, you must have <tt>StdOut.class</tt> in your
+ *  To use this class, you must have <tt>princeton_algos.StdOut.class</tt> in your
  *  Java classpath. If you used our autoinstaller, you should be all set.
  *  Otherwise, download
- *  <a href = "http://introcs.cs.princeton.edu/java/stdlib/StdOut.java">StdOut.java</a>
+ *  <a href = "http://introcs.cs.princeton.edu/java/stdlib/StdOut.java">princeton_algos.StdOut.java</a>
  *  and put a copy in your working directory.
  *  <p>
- *  Here is an example program that uses <code>StdOut</code>:
+ *  Here is an example program that uses <code>princeton_algos.StdOut</code>:
  *  <pre>
  *   public class TestStdOut {
  *       public static void main(String[] args) {
  *           int a = 17;
  *           int b = 23;
  *           int sum = a + b;
- *           StdOut.println("Hello, World");
- *           StdOut.printf("%d + %d = %d\n", a, b, sum);
+ *           princeton_algos.StdOut.println("Hello, World");
+ *           princeton_algos.StdOut.printf("%d + %d = %d\n", a, b, sum);
  *       }
  *   }
  *  </pre>
  *  <p>
  *  <b>Differences with System.out.</b>
- *  The behavior of <code>StdOut</code> is similar to that of {@link System#out},
+ *  The behavior of <code>princeton_algos.StdOut</code> is similar to that of {@link System#out},
  *  but there are a few subtle differences:
  *  <ul>
- *  <li> <code>StdOut</code> coerces the character-set encoding to UTF-8,
+ *  <li> <code>princeton_algos.StdOut</code> coerces the character-set encoding to UTF-8,
  *       which is a standard character encoding for Unicode.
- *  <li> <code>StdOut</code> coerces the locale to {@link Locale#US},
+ *  <li> <code>princeton_algos.StdOut</code> coerces the locale to {@link Locale#US},
  *       for consistency with {@link StdIn}, {@link Double#parseDouble(String)},
  *       and floating-point literals.
- *  <li> <code>StdOut</code> <em>flushes</em> standard output after each call to
+ *  <li> <code>princeton_algos.StdOut</code> <em>flushes</em> standard output after each call to
  *       <code>print()</code> so that text will appear immediately in the terminal.
  *  </ul>
  *  <p>
@@ -62,7 +62,7 @@ public final class StdOut {
     // force Unicode UTF-8 encoding; otherwise it's system dependent
     private static final String CHARSET_NAME = "UTF-8";
 
-    // assume language = English, country = US for consistency with StdIn
+    // assume language = English, country = US for consistency with princeton_algos.StdIn
     private static final Locale LOCALE = Locale.US;
 
     // send output here
@@ -302,7 +302,7 @@ public final class StdOut {
     }
 
    /**
-     * Unit tests some of the methods in <tt>StdOut</tt>.
+     * Unit tests some of the methods in <tt>princeton_algos.StdOut</tt>.
      */
     public static void main(String[] args) {
 

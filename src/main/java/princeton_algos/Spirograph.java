@@ -1,10 +1,11 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac Spirograph.java
- *  Execution:    java Spirograph R r a
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.Spirograph.java
+ *  Execution:    java princeton_algos.Spirograph R r a
+ *  Dependencies: princeton_algos.StdDraw.java
  *
- *  Draw a curve formed by rolling a smaller circle of radius r inside
+ *  princeton_algos.Draw a curve formed by rolling a smaller circle of radius r inside
  *  a larger circle or radius R. If the pen offset of the pen point in
  *  the moving circle is a, then the equation of the resulting curve
  *  at time t is
@@ -12,9 +13,9 @@
  *     x = (R+r)*cos(t) - (r+a)*cos(((R+r)/r)*t)
  *     y = (R+r)*sin(t) - (r+a)*sin(((R+r)/r)*t)
  *
- *  % java Spirograph 180 40 15
+ *  % java princeton_algos.Spirograph 180 40 15
  *
- *  % java Spirograph 100 55 20
+ *  % java princeton_algos.Spirograph 100 55 20
  *
  *  Credits: idea suggested by Diego Nehab
  *  Reference: http://www.math.dartmouth.edu/~dlittle/java/SpiroGraph
@@ -38,7 +39,7 @@ public class Spirograph {
             double y = (R+r) * Math.sin(t) - (r+a) * Math.sin(((R+r)/r)*t);
             double degrees = -Math.toDegrees((R+r)/r)*t;
             StdDraw.picture(x, y, "earth.gif", degrees);
-            // StdDraw.rotate(+Math.toDegrees((R+r)/r)*t);
+            // princeton_algos.StdDraw.rotate(+Math.toDegrees((R+r)/r)*t);
             StdDraw.show(20);
         }
 

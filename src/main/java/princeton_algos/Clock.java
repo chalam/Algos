@@ -1,8 +1,9 @@
+package princeton_algos;
 
 /******************************************************************************
- *  Compilation:  javac Clock.java
- *  Execution:    java Clock
- *  Dependencies: StdDraw.java
+ *  Compilation:  javac princeton_algos.Clock.java
+ *  Execution:    java princeton_algos.Clock
+ *  Dependencies: princeton_algos.StdDraw.java
  *
  ******************************************************************************/
 

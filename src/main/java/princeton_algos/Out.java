@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac Out.java
- *  Execution:    java Out
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.Out.java
+ *  Execution:    java princeton_algos.Out
  *  Dependencies: none
  *
  *  Writes data of various types to: stdout, file, or socket.
@@ -33,7 +33,7 @@ public class Out {
     // force Unicode UTF-8 encoding; otherwise it's system dependent
     private static final String CHARSET_NAME = "UTF-8";
 
-    // assume language = English, country = US for consistency with In
+    // assume language = English, country = US for consistency with princeton_algos.In
     private static final Locale LOCALE = Locale.US;
 
     private PrintWriter out;

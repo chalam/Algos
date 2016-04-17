@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac Picture.java
- *  Execution:    java Picture imagename
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.Picture.java
+ *  Execution:    java princeton_algos.Picture imagename
  *  Dependencies: none
  *
  *  Data type for manipulating individual pixels of an image. The original
@@ -8,7 +8,7 @@
  *  user can create a blank image of a given size. Includes methods for
  *  displaying the image in a window on the screen or saving to a file.
  *
- *  % java Picture mandrill.jpg
+ *  % java princeton_algos.Picture mandrill.jpg
  *
  *  Remarks
  *  -------
@@ -344,7 +344,7 @@ public final class Picture implements ActionListener {
 
 
    /**
-     * Unit tests this <tt>Picture</tt> data type.
+     * Unit tests this <tt>princeton_algos.Picture</tt> data type.
      * Reads a picture specified by the command-line argument,
      * and shows it in a window on the screen.
      */

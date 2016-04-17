@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac StdDraw.java
- *  Execution:    java StdDraw
+package princeton_algos; /******************************************************************************
+ *  Compilation:  javac princeton_algos.StdDraw.java
+ *  Execution:    java princeton_algos.StdDraw
  *  Dependencies: none
  *
  *  Standard drawing library. This class provides a basic capability for
@@ -71,7 +71,7 @@ import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
 /**
- *  The {@code StdDraw} class provides a basic capability for
+ *  The {@code princeton_algos.StdDraw} class provides a basic capability for
  *  creating drawings with your programs. It uses a simple graphics model that
  *  allows you to create drawings consisting of points, lines, squares, 
  *  circles, and other geometric shapes in a window on your computer and
@@ -80,21 +80,21 @@ import javax.swing.KeyStroke;
  *  user interaction via the keyboard and mouse.
  *  <p>
  *  <b>Getting started.</b>
- *  To use standard drawing, you must have <tt>StdDraw.class</tt> in your
+ *  To use standard drawing, you must have <tt>princeton_algos.StdDraw.class</tt> in your
  *  Java classpath. If you used our autoinstaller, you should be all set.
  *  Otherwise, download
- *  <a href = "http://introcs.cs.princeton.edu/java/stdlib/StdDraw.java">StdDraw.java</a>
+ *  <a href = "http://introcs.cs.princeton.edu/java/stdlib/StdDraw.java">princeton_algos.StdDraw.java</a>
  *  and put a copy in your working directory.
  *  <p>
  *  Now, type the following short program into your editor:
  *  <pre>
  *   public class TestStdDraw {
  *       public static void main(String[] args) {
- *           StdDraw.setPenRadius(0.05);
- *           StdDraw.setPenColor(StdDraw.BLUE);
- *           StdDraw.point(0.5, 0.5);
- *           StdDraw.setPenColor(StdDraw.MAGENTA);
- *           StdDraw.line(0.2, 0.2, 0.8, 0.2);
+ *           princeton_algos.StdDraw.setPenRadius(0.05);
+ *           princeton_algos.StdDraw.setPenColor(princeton_algos.StdDraw.BLUE);
+ *           princeton_algos.StdDraw.point(0.5, 0.5);
+ *           princeton_algos.StdDraw.setPenColor(princeton_algos.StdDraw.MAGENTA);
+ *           princeton_algos.StdDraw.line(0.2, 0.2, 0.8, 0.2);
  *       }
  *   }
  *  </pre>
@@ -103,9 +103,9 @@ import javax.swing.KeyStroke;
  *  This program illustrates the two main types of methods in standard
  *  drawing&mdash;methods that draw geometric shapes and methods that
  *  control drawing parameters.
- *  The methods {@code StdDraw.line()} and {@code StdDraw.point()}
- *  draw lines and points; the methods {@code StdDraw.setPenRadius()}
- *  and {@code StdDraw.setPenColor()} control the line thickness and color.
+ *  The methods {@code princeton_algos.StdDraw.line()} and {@code princeton_algos.StdDraw.point()}
+ *  draw lines and points; the methods {@code princeton_algos.StdDraw.setPenRadius()}
+ *  and {@code princeton_algos.StdDraw.setPenColor()} control the line thickness and color.
  *  <p>
  *  <b>Points and lines.</b>
  *  You can draw points and line segments with the following methods:
@@ -154,7 +154,7 @@ import javax.swing.KeyStroke;
  *  The arc is from the circle centered at (<em>x</em>, <em>y</em>) of the specified radius.
  *  The arc extends from angle1 to angle2. By convention, the angles are
  *  <em>polar</em> (counterclockwise angle from the <em>x</em>-axis)
- *  and represented in degrees. For example, {@code StdDraw.arc(0.0, 0.0, 1.0, 0, 90)}
+ *  and represented in degrees. For example, {@code princeton_algos.StdDraw.arc(0.0, 0.0, 1.0, 0, 90)}
  *  draws the arc of the unit circle from 3 o'clock (0 degrees) to 12 o'clock (90 degrees).
  *  <p>
  *  <b>Polygons.</b>
@@ -170,7 +170,7 @@ import javax.swing.KeyStroke;
  *  <pre>
  *   double[] x = { 0.1, 0.2, 0.3, 0.2 };
  *   double[] y = { 0.2, 0.3, 0.2, 0.1 };
- *   StdDraw.filledPolygon(x, y);
+ *   princeton_algos.StdDraw.filledPolygon(x, y);
  *  </pre>
  *  <p>
  *  <b>Pen size.</b>
@@ -186,7 +186,7 @@ import javax.swing.KeyStroke;
  *  <li> {@link #setPenRadius(double radius)}
  *  </ul>
  *  <p>
- *  For example, {@code StdDraw.setPenRadius(0.025)} makes
+ *  For example, {@code princeton_algos.StdDraw.setPenRadius(0.025)} makes
  *  the thickness of the lines and the size of the points to be five times
  *  the 0.005 default.
  *  To draw points with the minimum possible radius (one pixel on typical
@@ -210,7 +210,7 @@ import javax.swing.KeyStroke;
  *  {@link #BLACK}, {@link #BLUE}, {@link #CYAN}, {@link #DARK_GRAY}, {@link #GRAY},
  *  {@link #GREEN}, {@link #LIGHT_GRAY}, {@link #MAGENTA}, {@link #ORANGE},
  *  {@link #PINK}, {@link #RED}, {@link #WHITE}, and {@link #YELLOW}.
- *  For example, {@code StdDraw.setPenColor(StdDraw.MAGENTA)} sets the
+ *  For example, {@code princeton_algos.StdDraw.setPenColor(princeton_algos.StdDraw.MAGENTA)} sets the
  *  pen color to magenta.
  *  <p>
  *  <b>Canvas size.</b>
@@ -225,7 +225,7 @@ import javax.swing.KeyStroke;
  *  It also erases the current drawing and resets the coordinate system,
  *  pen radius, pen color, and font back to their default values.
  *  Ordinarly, this method is called once, at the very beginning of a program.
- *  For example, {@code StdDraw.setCanvasSize(800, 800)}
+ *  For example, {@code princeton_algos.StdDraw.setCanvasSize(800, 800)}
  *  sets the canvas size to be 800-by-800 pixels.
  *  <p>
  *  <b>Canvas scale and coordinate system.</b>
@@ -241,7 +241,7 @@ import javax.swing.KeyStroke;
  *  The arguments are the coordinates of the minimum and maximum 
  *  <em>x</em>- or <em>y</em>-coordinates that will appear in the canvas.
  *  For example, if you  wish to use the default coordinate system but
- *  leave a small margin, you can call {@code StdDraw.setScale(-.05, 1.05)}.
+ *  leave a small margin, you can call {@code princeton_algos.StdDraw.setScale(-.05, 1.05)}.
  *  <p>
  *  These methods change the coordinate system for subsequent drawing
  *  commands; they do not affect previous drawings.
@@ -274,8 +274,8 @@ import javax.swing.KeyStroke;
  *  code fragment sets the font to Arial Bold, 60 point.
  *  <pre>
  *   Font font = new Font("Arial", Font.BOLD, 60);
- *   StdDraw.setFont(font);
- *   StdDraw.text(0.5, 0.5, "Hello, World");
+ *   princeton_algos.StdDraw.setFont(font);
+ *   princeton_algos.StdDraw.text(0.5, 0.5, "Hello, World");
  *  </pre>
  *  <p>
  *  <b>Images.</b>
@@ -314,7 +314,7 @@ import javax.swing.KeyStroke;
  *  <p>
  *  The first method clears the canvas to white; the second method
  *  allows you to specify a color of your choice. For example,
- *  {@code StdDraw.clear(StdDraw.LIGHT_GRAY)} clears the canvas to a shade
+ *  {@code princeton_algos.StdDraw.clear(princeton_algos.StdDraw.LIGHT_GRAY)} clears the canvas to a shade
  *  of gray. Most often, these two methods are used in conjunction with animation mode.
  *  <p>
  *  <b>Animations.</b>
@@ -328,7 +328,7 @@ import javax.swing.KeyStroke;
  *  By default, animation mode is off, which means that as soon as you
  *  call a drawing
  *  method&mdash;such as {@code point()} or {@code line()}&mdash;the
- *  results appear on the screen. {@code StdDraw.show()} turns off
+ *  results appear on the screen. {@code princeton_algos.StdDraw.show()} turns off
  *  animation mode.
  *  <p>
  *  You can call {@link #show(int t)} to turn on animation mode. This
@@ -336,11 +336,11 @@ import javax.swing.KeyStroke;
  *  Once you are ready to display them,
  *  you call {@link #show(int t)} again, which transfer the offscreen
  *  drawing to the screen and waits for the specified number of milliseconds.
- *  In conjuction with {@link #clear()}, you can create the illusion
+ *  princeton_algos.In conjuction with {@link #clear()}, you can create the illusion
  *  of movement by iterating the following three steps:
  *  <ul>
  *  <li> Clear the background canvas.
- *  <li> Draw geometric objects.
+ *  <li> princeton_algos.Draw geometric objects.
  *  <li> Show the drawing and wait for a short while.
  *  </ul>
  *  <p>
@@ -411,7 +411,7 @@ import javax.swing.KeyStroke;
  *  <ul>
  *  <li> Use <em>animation mode</em> for static drawing with a large
  *       number of objects.
- *       That is, call {@code StdDraw.show(0)} before
+ *       That is, call {@code princeton_algos.StdDraw.show(0)} before
  *       and after the sequence of drawing commands.
  *       The bottleneck operation is not drawing the geometric
  *       shapes but rather drawing them to the screen. By using animation
@@ -670,7 +670,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);            // closes all windows
         // frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);      // closes only current window
-        frame.setTitle("Standard Draw");
+        frame.setTitle("Standard princeton_algos.Draw");
         frame.setJMenuBar(createMenuBar());
         frame.pack();
         frame.requestFocusInWindow();
@@ -853,11 +853,11 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
      * Sets the pen color to the specified color.
      * <p>
      * The predefined pen colors are
-     * <tt>StdDraw.BLACK</tt>, <tt>StdDraw.BLUE</tt>, <tt>StdDraw.CYAN</tt>,
-     * <tt>StdDraw.DARK_GRAY</tt>, <tt>StdDraw.GRAY</tt>, <tt>StdDraw.GREEN</tt>,
-     * <tt>StdDraw.LIGHT_GRAY</tt>, <tt>StdDraw.MAGENTA</tt>, <tt>StdDraw.ORANGE</tt>,
-     * <tt>StdDraw.PINK</tt>, <tt>StdDraw.RED</tt>, <tt>StdDraw.WHITE</tt>, and
-     * <tt>StdDraw.YELLOW</tt>.
+     * <tt>princeton_algos.StdDraw.BLACK</tt>, <tt>princeton_algos.StdDraw.BLUE</tt>, <tt>princeton_algos.StdDraw.CYAN</tt>,
+     * <tt>princeton_algos.StdDraw.DARK_GRAY</tt>, <tt>princeton_algos.StdDraw.GRAY</tt>, <tt>princeton_algos.StdDraw.GREEN</tt>,
+     * <tt>princeton_algos.StdDraw.LIGHT_GRAY</tt>, <tt>princeton_algos.StdDraw.MAGENTA</tt>, <tt>princeton_algos.StdDraw.ORANGE</tt>,
+     * <tt>princeton_algos.StdDraw.PINK</tt>, <tt>princeton_algos.StdDraw.RED</tt>, <tt>princeton_algos.StdDraw.WHITE</tt>, and
+     * <tt>princeton_algos.StdDraw.YELLOW</tt>.
      *
      * @param color the color to make the pen
      */
@@ -1232,7 +1232,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
             }
         }
 
-        // in case file is inside a .jar (classpath relative to StdDraw)
+        // in case file is inside a .jar (classpath relative to princeton_algos.StdDraw)
         if ((icon == null) || (icon.getImageLoadStatus() != MediaTracker.COMPLETE)) {
             URL url = StdDraw.class.getResource(filename);
             if (url != null)
