@@ -9,11 +9,11 @@ import java.util.*;
 public class Immutability {
     public static void main(String[] args) {
         Calendar cal = Calendar.getInstance();
-        cal.set(1980, Calendar.MAY, 20);
+        cal.set(1856, Calendar.JULY, 10);
 
         String[] cols = {"RED", "BLUE", "GREEN"};
         List<String> colors = new ArrayList<>(Arrays.asList(cols));
-        Person p1 = new Person("Lam", cal.getTime(), colors);
+        Person p1 = new Person("Tesla", cal.getTime(), colors);
         System.out.printf("\n1=%s", p1);
 
         Person p2 = p1;
